@@ -41,16 +41,21 @@ function multiplyThree( num0, num1, num2 ){
 // call to function test
 // i moved the console log under the } only then did the console log work?
 // I confirmed console reads 'running multiplyThree 48'.
-console.log('running multiplyThree equal to ', multiplyThree(2, 4, 6));
+console.log('Test - running multiplyThree equal to ', multiplyThree(2, 4, 6));
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
+console.log(' in isPositive:', number);
+  let answer = number > 0;
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+    else return false;
 }
+console.log('Test - running isPositive:', isPositive(4));
+console.log('Test - running isPositive:', isPositive(-4));
+console.log('Test - running isPositive:', isPositive(1));
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
