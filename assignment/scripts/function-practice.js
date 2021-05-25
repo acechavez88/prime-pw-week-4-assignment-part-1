@@ -54,10 +54,8 @@ console.log(' in isPositive:', number);
     else return false;
 }
 // tested multiple positive and negative numbers to test nested conditional.
-//console log test confirmed with appropriate output. 
-console.log('Test - running isPositive:', isPositive(4));
-console.log('Test - running isPositive:', isPositive(-4));
-console.log('Test - running isPositive:', isPositive(1));
+//console log test confirmed with appropriate output.
+
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
