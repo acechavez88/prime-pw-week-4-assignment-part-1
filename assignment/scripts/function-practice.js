@@ -21,15 +21,21 @@ function helloName( name ) {
 console.log('Test - should say "Hello Abraham Lincoln"', helloName());
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+function addNumbers() {
+  let firstNumber = 5 + 5;
+  return firstNumber;
   // return firstNumber + secondNumber;
 }
-
+// call the function to test
+console.log('Test - should calculate ', addNumbers());
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
-}
+function multiplyThree( num0, num1, num2 ){
+  console.log(' in multiplyThree:', num0, num1, num2);
+  let answer = num0 * num1 * num2;
+  return answer;
+  console.log('runing multiplyThree with 2 & 4 & 6',(2, 4, 6));
+} // end multiplyThree
 
 
 // 5. Function that will return true if a number is positive,
