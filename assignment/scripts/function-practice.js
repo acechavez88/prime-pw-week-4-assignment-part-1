@@ -34,9 +34,11 @@ function multiplyThree( num0, num1, num2 ){
   console.log(' in multiplyThree:', num0, num1, num2);
   let answer = num0 * num1 * num2;
   return answer;
-  console.log('runing multiplyThree with 2 & 4 & 6', multiplyThree(2, 4, 6));
 } // end multiplyThree
-
+// call to function test
+// i moved the console log under the } only then did the console log work?
+// I confirmed console reads 'running multiplyThree 48'.
+console.log('running multiplyThree equal to ', multiplyThree(2, 4, 6));
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
