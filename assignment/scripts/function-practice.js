@@ -34,7 +34,7 @@ function multiplyThree( num0, num1, num2 ){
   console.log(' in multiplyThree:', num0, num1, num2);
   let answer = num0 * num1 * num2;
   return answer;
-  console.log('runing multiplyThree with 2 & 4 & 6',(2, 4, 6));
+  console.log('runing multiplyThree with 2 & 4 & 6', multiplyThree(2, 4, 6));
 } // end multiplyThree
 
 
