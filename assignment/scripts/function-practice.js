@@ -21,13 +21,16 @@ function helloName( name ) {
 console.log('Test - should say "Hello Abraham Lincoln"', helloName());
 
 // 3. Function to add two numbers together & return the result
-function addNumbers() {
-  let firstNumber = 5 + 5;
-  return firstNumber;
+function addNumbers(firstNumber, secondNumber) {
+  console.log('in addNumbers:', firstNumber, secondNumber);
+  let answer = firstNumber + secondNumber;
+  return answer;
   // return firstNumber + secondNumber;
-}
+}// end addNumbers
 // call the function to test
-console.log('Test - should calculate ', addNumbers());
+// Confirmed in Console log reads and displays 'Test - running addNumbers
+//should equal 100'.
+console.log('Test - running addNumbers should equal', addNumbers(50, 50));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( num0, num1, num2 ){
