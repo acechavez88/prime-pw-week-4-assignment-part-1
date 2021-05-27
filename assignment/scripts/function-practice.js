@@ -65,31 +65,34 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
-function getLast( array ) {
-return "last array";
-console.log('in getLast',getLast);
-let array = [];
-array.push('New array item'. array.length-1);
-console.log('Test - Added a new array item,', getLast());
-
-  // if(i >= array.length){
-  //   return true;
-  // }
-  // else {
-  //   return undefined;
-  //   console.log('Test- function to array', getLast());
-  // }
-}
+  function getLast( array ) {
+    let lastIndex = array.length-1
+    return array[lastIndex];
+  }
+  console.log(getLast([1, 2, 3]));
+  console.log(getLast([]));
+// console.log should read 3, since this is the last item in the array.
+// I console logged a second with an empty array to show return undefined.
+//confirmed in console.log reads 'undefined'..
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
-console.log('in find', value, array );
-for (let i = 0; i < array.length; i++) {
-  console.log('array'[i]);
+let findvalue = array;
+for (var i = 0; i < array; i++) {
+  if ( number > 0 ){
+    return array[findvalue];
+  }
+    else return false;
 }
-}
+  }
+console.log('test - return undefined', find([]));
+console.log('test - return true if value found', find([1,2,3]));
+
+// trying to nest a for loop into a function and next nest a if conditional in
+//to that. Cuurent console.log reads undefined with one array with values and
+//one without..
 
 // ----------------------
 // Stretch Goals
