@@ -90,6 +90,23 @@ for (var i = 0; i < array; i++) {
 console.log('test - return undefined', find([]));
 console.log('test - return true if value found', find([1,2,3]));
 
+// function to search array using for loop
+function find(array, value) {
+    for (var i = 0,len = array.length; i < len; i++) {
+        if ( array[i] === value ) { // strict equality test
+            return i;
+        }
+    }
+    return true;
+}
+
+
+// example array
+var array = [1,2,3];
+// test the function
+console.log(array,find([1,2,3]) ); // 0 (found at first element)
+console.log(array,find([4]) ); // -1 (not found)
+
 // trying to nest a for loop into a function and next nest a if conditional in
 //to that. Cuurent console.log reads undefined with one array with values and
 //one without..
