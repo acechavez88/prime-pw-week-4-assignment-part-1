@@ -79,33 +79,18 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
-let findvalue = array;
-for (var i = 0; i < array; i++) {
-  if ( number > 0 ){
-    return array[findvalue];
-  }
-    else return false;
-}
-  }
-console.log('test - return undefined', find([]));
-console.log('test - return true if value found', find([1,2,3]));
+  for (let i = 0; i < array.length; i++) { // made a for loop that will loop thru array to check for value.
+    if (0 < [array] && 0<= value) { // made a if and else to return true if value found and false if matching value not found.
+      return true // return true if value found in the array during recall of the function..
 
-// function to search array using for loop
-function find(array, value) {
-    for (var i = 0,len = array.length; i < len; i++) {
-        if ( array[i] === value ) { // strict equality test
-            return i;
-        }
+    } else {
+      return false
     }
-    return true;
+  }
 }
-
-
-// example array
-var array = [1,2,3];
-// test the function
-console.log(array,find([1,2,3]) ); // 0 (found at first element)
-console.log(array,find([4]) ); // -1 (not found)
+console.log('found the value',find(1,[3])); // should return true
+console.log('didnt find value', find(0,[100])); // should return false
+// since no value was found in the array
 
 // trying to nest a for loop into a function and next nest a if conditional in
 //to that. Cuurent console.log reads undefined with one array with values and
@@ -117,8 +102,8 @@ console.log(array,find([4]) ); // -1 (not found)
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
-}
+      return true;
+    }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
