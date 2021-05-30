@@ -88,9 +88,9 @@ function find( value, array ){
     }
   }
 }
-console.log('found the value',find(1,[3])); // should return true
-console.log('didnt find value', find(0,[100])); // should return false
-// since no value was found in the array
+console.log('found the value',find(1,[3])); // should return true since array has value '3..'
+console.log('didnt find value', find(100,[0])); // should return false
+// since no value was found in the array.
 
 // trying to nest a for loop into a function and next nest a if conditional in
 //to that. Cuurent console.log reads undefined with one array with values and
