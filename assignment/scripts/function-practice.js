@@ -18,8 +18,8 @@ console.log(hello('you handsome devil')); // should read hello you handsome devi
 function helloName( name ) {
   return `Hello ${name}`;
 }
-helloName('joe');
-helloName('shmoe');
+console.log(helloName('joe'));// should read hellp joe..
+console.log(helloName('schmoe'));// should read hello schmoe..
 // Remember to call the function to test
 console.log('Test - should say "Hello Abraham Lincoln"', helloName());
 
