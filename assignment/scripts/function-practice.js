@@ -29,7 +29,8 @@ function addNumbers(firstNumber, secondNumber) {
   // return firstNumber + secondNumber;
   //called the function addNumbers
 }
-console.log('Test -addNumbers should equal', addNumbers(50, 50));
+console.log('should equal 100=', addNumbers(50, 50));
+console.log('10 plus 10=', addNumbers(10,10));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( num0, num1, num2 ){
