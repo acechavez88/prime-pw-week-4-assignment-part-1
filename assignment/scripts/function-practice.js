@@ -5,18 +5,21 @@ console.log('***** Function Practice *****')
 // to test it and display the result
 
 // 1. Function to return 'Hello World!'
-function hello() {
-  return 'Hello World!';
+function hello(saying) {
+  return `Hello ${saying}`;
 }
 // Call the function to test
-console.log('Test - should say "Hello World!"', hello());
+console.log(hello('world'));// should read hello world..confirmed!
+console.log(hello('you handsome devil')); // should read hello you handsome devil..!
 
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return 'Hello Abraham Lincoln';
+  return `Hello ${name}`;
 }
+helloName('joe');
+helloName('shmoe');
 // Remember to call the function to test
 console.log('Test - should say "Hello Abraham Lincoln"', helloName());
 
