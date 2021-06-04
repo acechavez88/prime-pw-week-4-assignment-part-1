@@ -18,22 +18,18 @@ console.log(hello('you handsome devil')); // should read hello you handsome devi
 function helloName( name ) {
   return `Hello ${name}`;
 }
-console.log(helloName('joe'));// should read hellp joe..
-console.log(helloName('schmoe'));// should read hello schmoe..
+
 // Remember to call the function to test
-console.log('Test - should say "Hello Abraham Lincoln"', helloName());
+console.log(helloName('joe'));// should read hellp joe..confirmed!
+console.log(helloName('schmoe'));// should read hello schmoe.. confirmed!
 
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
-  console.log('in addNumbers:', firstNumber, secondNumber);
-  let answer = firstNumber + secondNumber;
-  return answer;
+  return firstNumber + secondNumber;
   // return firstNumber + secondNumber;
-}// end addNumbers
-// call the function to test
-// Confirmed in Console log reads and displays 'Test - running addNumbers
-//should equal 100'.
-console.log('Test - running addNumbers should equal', addNumbers(50, 50));
+  //called the function addNumbers
+}
+console.log('Test -addNumbers should equal', addNumbers(50, 50));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( num0, num1, num2 ){
