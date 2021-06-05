@@ -41,29 +41,23 @@ console.log('2*4*6=', multiplyThree(2, 4, 6));//should equal 48..confirmed!!
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
-function isPositive( number ) {
-console.log(' in isPositive:', number);
-  let answer = number > 0;
-  if ( number > 0 ){
-    return true;
-  }
-    else return false;
+function isPositive(number) {
+  return number > 0;
 }
 // tested multiple positive and negative numbers to test nested conditional.
 //console log test confirmed with appropriate output.
 
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
-console.log( 'isPositive - should say true', isPositive(3) );
-console.log( 'isPositive - should say false', isPositive(0) );
-console.log( 'isPositive - should say false', isPositive(-3) );
+console.log( '3 is positive - should say true', isPositive(3) );
+console.log( '0 is Positive - should say false', isPositive(0) );
+console.log( '-3 isPositive - should say false', isPositive(-3) );
 
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
   function getLast( array ) {
-    let lastIndex = array.length-1
-    return array[lastIndex];
+    return array[array.length-1];
   }
   console.log(getLast([1, 2, 3]));
   console.log(getLast([]));
