@@ -68,9 +68,10 @@ console.log( '-3 isPositive - should say false', isPositive(-3) );
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
+
 function find( value, array ){
-  for (let i = 0; i < array.length; i++) { // made a for loop that will loop thru array to check for value.
-    if (0 < [array] && 0<= value) { // made a if and else to return true if value found and false if matching value not found.
+  for (let i of array) { // made a for of loop that will loop thru array properties to check for value.
+    if (array[i] === value) { //
       return true // return true if value found in the array during recall of the function..
 
     } else {
@@ -78,13 +79,9 @@ function find( value, array ){
     }
   }
 }
-console.log('found the value',find(1,[3])); // should return true since array has value '3..'
-console.log('didnt find value', find(100,[0])); // should return false
+console.log('found the value',find(1, [1])); // console log returning false.. should be true..
+console.log('didnt find value', find(4,[1,2,3])); // should return false
 // since no value was found in the array.
-
-// trying to nest a for loop into a function and next nest a if conditional in
-//to that. Cuurent console.log reads undefined with one array with values and
-//one without..
 
 // ----------------------
 // Stretch Goals
