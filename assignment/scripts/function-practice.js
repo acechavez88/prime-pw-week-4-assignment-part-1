@@ -70,8 +70,8 @@ console.log( '-3 isPositive - should say false', isPositive(-3) );
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 
 function find( value, array ){
-  for (let i of array) { // made a for of loop that will loop thru array properties to check for value.
-    if (array[i] === value) { //
+  for (let i = 0; i < array.length; i++) { // made a for of loop that will loop thru array properties to check for value.
+    if (value === array[i]) { //
       return true // return true if value found in the array during recall of the function..
 
     } else {
@@ -79,10 +79,11 @@ function find( value, array ){
     }
   }
 }
-console.log('found the value',find(1, [1])); // console log returning false.. should be true..
-console.log('didnt find value', find(4,[1,2,3])); // should return false
-// since no value was found in the array.
-
+console.log('***** Test to find value in array ******');
+console.log('found the value',find(1, [1])); // console log returns true..
+console.log('didnt find value', find(4,[0])); // should return false since value
+//doesnt match elements in array..
+console.log('didnt find value', find('test',['test'])); //should return true ..
 // ----------------------
 // Stretch Goals
 // ----------------------
